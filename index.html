@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>❤️ Lipsy, Happy Valentine’s ❤️</title>
+<title>❤️ Avneet, Happy Valentine’s ❤️</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&family=DynaPuff:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -396,21 +396,21 @@ text-shadow:
   if(w < 480){          // 📱 Small phones
     return {
       normal: 26,
-      lipsy: 36,
+      avneet: 36,
       spacing: 3.2,
       lineGap: 8
     };
   }else if(w < 768){    // 📱 Large phones / small tablets
     return {
       normal: 32,
-      lipsy: 48,
+      avneet: 48,
       spacing: 4,
       lineGap: 9
     };
   }else{                // 💻 Desktop
     return {
       normal: 48,
-      lipsy: 72,
+      avneet: 72,
       spacing: 5,
       lineGap: 10
     };
@@ -527,7 +527,7 @@ function sparkleBurst(x, y){
   }
 }
 
-function writeNameInStars(name="I love you Lipsy forever"){ 
+function writeNameInStars(name="I love you avneet forever"){ 
 
   const card = document.getElementById("card");
   const dots = document.getElementById("dots");
@@ -563,8 +563,8 @@ s.style.left = (startX + i * sizes.spacing) + "vw";
 s.style.top  = (38 + lineIndex * sizes.lineGap) + "vh";
 
 // Responsive font sizes
-if(lineIndex===1){ // Lipsy
-  s.style.fontSize = sizes.lipsy + "px";
+if(lineIndex===1){ // avneet
+  s.style.fontSize = sizes.avneet + "px";
   s.style.textShadow="0 0 20px #fff,0 0 40px #ff4d6d,0 0 80px #ff4d6d";
 }else{
   s.style.fontSize = sizes.normal + "px";
@@ -623,8 +623,8 @@ if(lineIndex===1){ // Lipsy
 
 
 const cards=[
- // {t:"Happy Valentine’s, Lipsy", m:"Those who are unattractive know that if someone loves them, they love them for who they truly are. Beautiful people never know whom to trust; perhaps that is why you don’t trust me ❤️", g: gifs.intro},
- {t:"Happy Valentine’s, Lipsy", m:"The Mona Lisa would still be the greatest art… if your <b>smile</b> didn’t exist ❤️", g: gifs.intro},
+ // {t:"Happy Valentine’s, avneet", m:"Those who are unattractive know that if someone loves them, they love them for who they truly are. Beautiful people never know whom to trust; perhaps that is why you don’t trust me ❤️", g: gifs.intro},
+ {t:"Happy Valentine’s, avneet", m:"The Mona Lisa would still be the greatest art… if your <b>smile</b> didn’t exist ❤️", g: gifs.intro},
  {t:"🌹 Rose Day", m:"Every rose have <b>Thorns</b>, show me yours and I'll show you the hand willing to <b>bleed</b>", g: gifs.rose},
  {t:"💍 Propose Day", m:"I found my peace the moment <b>I found you</b>. Now, I want to make sure I never have to look for it again. Will you do me the honor of spending <b>forever with me?</b>", g: gifs.propose},
  {t:"🍫 Chocolate Day", m:"You melt my stress away just like chocolate. I hope I can be your chocolate one day, just as <b>you are mine.</b>" ,g: gifs.food},
